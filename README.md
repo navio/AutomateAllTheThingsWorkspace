@@ -1,0 +1,4 @@
+AutomateAllTheThingsWorkspace
+=============================
+
+SF Class
