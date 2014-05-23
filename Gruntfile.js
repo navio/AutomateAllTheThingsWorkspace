@@ -1,7 +1,15 @@
 module.exports = function(grunt) {
+require('load-grunt-tasks')(grunt);
+grunt.initConfig({
+    clean: ['./dist'],
+    copy: {
+        release: {
+            files: [ { src: './**', dest: './dist/' } ]
+        }
+    }
+});
 
-  grunt.registerTask('default', 'Hello World.', function() {
-	grunt.log.write('Hello world from grunt...').ok();
-  });
+
+grunt.registerTask('default', ['clean', 'copy']);
 
 };
